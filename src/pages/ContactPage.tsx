@@ -27,8 +27,8 @@ const ContactPage: React.FC = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: '公司地址',
-      content: '浙江省杭州市余杭区人工智能小镇',
-      details: '杭州市余杭区文一西路998号'
+      content: '浙江省杭州市临安区科技大道浩源创新工场三号楼501',
+      details: '浙江省杭州市临安区科技大道浩源创新工场三号楼501'
     },
     {
       icon: <Phone className="w-6 h-6" />,
@@ -39,8 +39,8 @@ const ContactPage: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: '电子邮箱',
-      content: 'contact@pohuang.ai',
-      details: '商务合作：business@pohuang.ai'
+      content: 'pohuangai@163.com',
+      details: '商务合作：pohuangai@163.com'
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -325,22 +325,23 @@ const ContactPage: React.FC = () => {
                 ))}
               </div>
 
-              {/* 地图占位 */}
+              {/* 地图 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                className="bg-gradient-to-br from-secondary-silver to-white rounded-2xl p-8 text-center"
+                className="bg-gradient-to-br from-secondary-silver to-white rounded-2xl p-8"
               >
                 <h3 className="text-xl font-bold mb-4 text-secondary-darkGray">
                   地理位置
                 </h3>
-                <div className="aspect-video bg-gradient-to-br from-primary-blue/20 to-accent-purple/20 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-12 h-12 text-primary-blue mx-auto mb-4" />
-                    <p className="font-medium text-secondary-gray">杭州市余杭区人工智能小镇</p>
-                    <p className="text-sm text-secondary-lightGray mt-2">实际开发中可集成地图组件</p>
-                  </div>
+                <div className="aspect-video rounded-xl overflow-hidden">
+                  <img 
+                    src="/images/map.jpg" 
+                    alt="公司位置 - 浙江省杭州市临安区科技大道浩源创新工场三号楼501"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+                <p className="text-sm text-secondary-gray mt-3 text-center">浙江省杭州市临安区科技大道浩源创新工场三号楼501</p>
               </motion.div>
             </motion.div>
           </div>
@@ -428,22 +429,22 @@ const ContactPage: React.FC = () => {
                 选择破荒AI，选择专业、高效、可靠的AI技术合作伙伴
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <motion.a
-                  href="tel:15381011072"
+                <motion.button
+                  onClick={() => alert('联系电话：153-8101-1072\n工作时间：9:00-18:00')}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 bg-white text-primary-blue font-bold rounded-full hover:shadow-xl transition-all"
                 >
                   立即致电
-                </motion.a>
-                <motion.a
-                  href="mailto:contact@pohuang.ai"
+                </motion.button>
+                <motion.button
+                  onClick={() => alert('邮箱：pohuangai@163.com')}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition-all"
                 >
                   发送邮件
-                </motion.a>
+                </motion.button>
               </div>
             </div>
           </motion.div>

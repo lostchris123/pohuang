@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
@@ -10,6 +11,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <Navbar />
       <main className="flex-grow">
         <Routes>

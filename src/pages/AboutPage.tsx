@@ -14,54 +14,54 @@ import {
 const AboutPage: React.FC = () => {
   const timeline = [
     {
-      year: '2020',
+      year: '2024',
       title: '公司成立',
       description: '杭州破荒人工智能科技有限公司正式成立，开启AI技术创新之路'
     },
     {
-      year: '2021',
+      year: '2024',
       title: '产品发布',
       description: '爆款捕手、数字人平台等核心产品相继上线，获得市场认可'
     },
     {
-      year: '2022',
+      year: '2025',
       title: '快速增长',
-      description: '服务客户突破100家，处理数据量达500万+，业务快速扩张'
+      description: '服务客户突破100家，AI知识库、招投标系统等新产品矩阵成型'
     },
     {
-      year: '2023',
-      title: '行业领先',
-      description: '成为AI技术服务领域领先企业，获得多项行业大奖与专利认证'
+      year: '2025',
+      title: '行业认可',
+      description: '获评浙江省科技型中小企业，成为IARA国际机器人产教融合创新中心理事单位'
     },
     {
-      year: '2024',
+      year: '2026',
       title: '生态构建',
-      description: '构建完整的AI产品生态矩阵，为企业提供一站式数字化解决方案'
+      description: '构建完整的AI产品生态矩阵，携手高校与企业推进AI产业化落地'
     }
   ]
 
   const team = [
     {
       name: '技术团队',
-      count: '50+',
+      count: '20+',
       description: '来自阿里巴巴、百度等一线互联网公司的AI技术专家',
       icon: <Brain className="w-8 h-8" />
     },
     {
       name: '产品团队',
-      count: '20+',
+      count: '5+',
       description: '资深产品经理，深耕行业多年，深刻理解企业需求',
       icon: <Lightbulb className="w-8 h-8" />
     },
     {
       name: '服务团队',
-      count: '30+',
+      count: '10+',
       description: '专业客户服务团队，提供7x24小时技术支持',
       icon: <Heart className="w-8 h-8" />
     },
     {
       name: '市场团队',
-      count: '15+',
+      count: '10+',
       description: '市场运营专家，助力企业实现商业价值最大化',
       icon: <Globe className="w-8 h-8" />
     }
@@ -91,12 +91,21 @@ const AboutPage: React.FC = () => {
   ]
 
   const certifications = [
-    '国家高新技术企业',
-    'ISO 27001信息安全认证',
-    'AAA级信用企业',
-    '人工智能产业联盟成员',
-    '杭州市重点科技企业',
-    '瞪羚企业'
+    '浙江省科技型中小企业',
+    'IARA国际机器人产教融合创新中心理事单位',
+    '武汉市黄陂区服装行业协会AI数智化服务中心',
+    '杭州电子科技大学破荒人工智能智慧教育研究院'
+  ]
+
+  const certImages = [
+    '/images/certs/WechatIMG241.jpg',
+    '/images/certs/WechatIMG3413.jpg',
+    '/images/certs/WechatIMG3416.jpg',
+    '/images/certs/WechatIMG3415.jpg',
+    '/images/certs/WechatIMG3417.jpg',
+    '/images/certs/WechatIMG3421.jpg',
+    '/images/certs/WechatIMG3423.jpg',
+    '/images/certs/WechatIMG3422.jpg'
   ]
 
   return (
@@ -280,16 +289,30 @@ const AboutPage: React.FC = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {certifications.map((cert, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.05 }}
+                transition={{ delay: index * 0.1 }}
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/20 transition-all"
               >
                 <div className="text-sm font-semibold">{cert}</div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {certImages.map((img, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+              >
+                <img src={img} alt="资质认证" className="w-full h-48 object-contain" />
               </motion.div>
             ))}
           </div>

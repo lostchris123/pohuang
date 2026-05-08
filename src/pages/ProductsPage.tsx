@@ -49,8 +49,10 @@ const ProductsPage: React.FC = () => {
       const element = document.getElementById(id)
       if (element) {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }, 100)
+          const yOffset = -80
+          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
+          window.scrollTo({ top: y, behavior: 'smooth' })
+        }, 300)
       }
     }
   }, [location])
@@ -67,7 +69,8 @@ const ProductsPage: React.FC = () => {
     '/images/aiknowledge/1.jpg',
     '/images/aiknowledge/2.jpg',
     '/images/aiknowledge/3.jpg',
-    '/images/aiknowledge/4.jpg'
+    '/images/aiknowledge/4.jpg',
+    '/images/aiknowledge/5.jpg'
   ]
 
   const zhaotoubiaoImages = [
@@ -262,7 +265,7 @@ const ProductsPage: React.FC = () => {
           className={`section-padding ${index % 2 === 1 ? 'bg-secondary-silver/30' : ''}`}
         >
           <div className="container-responsive">
-            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
               <motion.div
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -316,6 +319,7 @@ const ProductsPage: React.FC = () => {
                 initial={{ opacity: 0, x: index % 2 === 0 ? 20 : -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 className={index % 2 === 1 ? 'lg:order-1' : ''}
+                style={{ paddingTop: '120px' }}
               >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {product.features.map((feature, idx) => (

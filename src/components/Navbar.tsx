@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Brain, Sparkles } from 'lucide-react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Menu, X, Sparkles } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const Navbar: React.FC = () => {
@@ -17,10 +17,7 @@ const Navbar: React.FC = () => {
 
   const isActive = (path: string) => location.pathname === path
 
-  const handleFreeTrial = () => {
-    alert('免费试用功能正在开发中，敬请期待！')
-    // 后期可以替换为实际链接：window.location.href = '/trial-apply'
-  }
+  const navigate = useNavigate()
 
   return (
     <nav className="sticky top-0 z-50 glass-effect border-b border-white/10">
@@ -34,9 +31,7 @@ const Navbar: React.FC = () => {
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute -inset-1 bg-gradient-to-r from-primary-blue to-accent-purple rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity"
               />
-              <div className="relative bg-gradient-to-br from-primary-blue to-accent-purple p-3 rounded-2xl">
-                <Brain className="w-8 h-8 text-white" />
-              </div>
+              <img src="/logo.png" alt="破荒AI" className="w-10 h-10 rounded-xl" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-black text-gradient">
@@ -68,7 +63,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <motion.button
-              onClick={handleFreeTrial}
+              onClick={() => navigate("/contact")}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2.5 bg-gradient-to-r from-primary-blue to-accent-purple text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
@@ -118,7 +113,7 @@ const Navbar: React.FC = () => {
               <button 
                 onClick={() => {
                   setIsOpen(false)
-                  handleFreeTrial()
+                  navigate("/contact")
                 }}
                 className="px-4 py-3 bg-gradient-to-r from-primary-blue to-accent-purple text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
               >

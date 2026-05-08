@@ -1,12 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
 import HeroCarousel from '../components/HeroCarousel'
 import ProductCard from '../components/ProductCard'
 import { Brain, Zap, Target, Rocket } from 'lucide-react'
 
 const HomePage: React.FC = () => {
-  const navigate = useNavigate()
 
   const products = [
     {
@@ -73,12 +71,8 @@ const HomePage: React.FC = () => {
     { icon: <Rocket className="w-8 h-8" />, title: '创新突破', description: '持续技术创新引领行业' }
   ]
 
-  const handleFreeConsult = () => {
-    navigate('/contact')
-  }
-
-  const handleViewCases = () => {
-    alert('案例展示功能正在开发中，敬请期待！')
+    const handleFreeConsult = () => {
+    alert('联系我们\n\n📧 邮箱：pohuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')
   }
 
   return (
@@ -181,14 +175,7 @@ const HomePage: React.FC = () => {
                 >
                   免费咨询
                 </motion.button>
-                <motion.button
-                  onClick={handleViewCases}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition-all"
-                >
-                  查看案例
-                </motion.button>
+
               </div>
             </div>
           </motion.div>

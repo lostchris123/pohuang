@@ -86,7 +86,7 @@ const HeroCarousel: React.FC = () => {
                       transition={{ delay: 0.2 }}
                       className="max-w-2xl"
                     >
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 whitespace-nowrap">
                         <span className="text-gradient">{slide.title}</span>
                       </h1>
                       <p className="text-lg md:text-xl text-secondary-gray mb-8 leading-relaxed">
