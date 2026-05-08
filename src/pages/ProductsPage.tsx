@@ -73,6 +73,10 @@ const ProductsPage: React.FC = () => {
     '/images/aiknowledge/5.jpg'
   ]
 
+  const contentFactoryImages = [
+    '/images/content-factory/1.jpg'
+  ]
+
   const zhaotoubiaoImages = [
     '/images/zhaotoubiao/1.jpg',
     '/images/zhaotoubiao/2.jpg',
@@ -87,6 +91,8 @@ const ProductsPage: React.FC = () => {
       setGalleryConfig({ isOpen: true, images: digitalHumanImages })
     } else if (productId === 'ai-knowledge') {
       setGalleryConfig({ isOpen: true, images: aiknowledgeImages })
+    } else if (productId === 'content-factory') {
+      setGalleryConfig({ isOpen: true, images: contentFactoryImages })
     } else if (productId === 'ai-bidding') {
       setGalleryConfig({ isOpen: true, images: zhaotoubiaoImages })
     } else {
