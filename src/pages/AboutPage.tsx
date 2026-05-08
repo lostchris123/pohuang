@@ -7,6 +7,7 @@ import {
   Award,
   Lightbulb,
   Heart,
+  Users,
   Globe
 } from 'lucide-react'
 
@@ -69,23 +70,23 @@ const AboutPage: React.FC = () => {
   const values = [
     {
       icon: <Target className="w-12 h-12" />,
-      title: '深耕一域',
-      description: '不贪多不追风，先把服装行业吃透，成为行业里最懂AI的人、AI圈里最懂服装的人'
+      title: '求真务实',
+      description: '不说假话大话，只做真需求、真价值。数据说话，结果导向。客户没受益，就是我们没做好。'
     },
     {
       icon: <Rocket className="w-12 h-12" />,
-      title: '技术落地',
-      description: 'AI的价值不在论文里，在客户的订单里、工厂的产线上、商家的转化率里'
+      title: '深耕笃行',
+      description: '不追风口不贪捷径，愿意花笨功夫把一件事做到极致。一米宽，一千米深。'
     },
     {
-      icon: <Brain className="w-12 h-12" />,
-      title: '行业Know-how',
-      description: '同一个模型，懂面料的和不懂面料的效果天差地别，行业知识深度决定AI应用高度'
+      icon: <Users className="w-12 h-12" />,
+      title: '开放共创',
+      description: '不闭门造车，和客户同行、和伙伴共赢。问题一起扛，成果一起享。'
     },
     {
       icon: <Award className="w-12 h-12" />,
-      title: '可复制的深度',
-      description: '每在一个行业扎深一步，都沉淀出可迁移的方法论和可复用的产品架构'
+      title: '破荒进取',
+      description: '不安于舒适区，敢于走进无人区。破是打破常规，荒是开垦荒地——从零到一，我们先行。'
     }
   ]
 
@@ -128,9 +129,9 @@ const AboutPage: React.FC = () => {
           {/* 企业使命愿景 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: '使命', content: '让AI深入每一根纱线，让智能织就每一个行业。从服装行业出发，用AI重新定义产业链的每一个环节，先做透一个行业，再把方法论复制到千行百业' },
-              { title: '愿景', content: '成为中国最懂行业的AI赋能平台。5年内深度赋能服装产业链上下游1000+企业，形成可复制的行业AI范式，向制造、零售、检务等领域延伸' },
-              { title: '价值观', content: '深耕一域方能破局 · 技术落地不是炫技 · 行业Know-how大于通用算法 · 做可复制的深度 · 客户成功即我们成功' }
+              { title: '使命', bold: '让AI深入每一根纱线，让智能织就每一个行业', content: '从服装行业出发，用AI重新定义产业链的每一个环节——从面料选择到趋势预判，从设计打版到智能营销。先做透一个行业，再把方法论复制到千行百业。' },
+              { title: '愿景', bold: '成为中国最懂行业的AI赋能平台', content: '5年内深度赋能服装产业链上下游1000+企业，形成可复制的行业AI范式，向制造、零售、检务等领域延伸，最终成为产业智能化的基础设施。' },
+              { title: '价值观', bold: '求真务实 · 深耕笃行 · 开放共创 · 破荒进取', content: '破旧立新，开荒前行。不是等风来，而是自己造风。' }
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -140,7 +141,8 @@ const AboutPage: React.FC = () => {
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
               >
                 <h3 className="text-2xl font-bold mb-4 text-primary-blue">{item.title}</h3>
-                <p className="text-secondary-gray leading-relaxed">{item.content}</p>
+                <p className="text-lg font-bold text-secondary-darkGray mb-2">{item.bold}</p>
+                <p className="text-sm text-secondary-gray leading-relaxed">{item.content}</p>
               </motion.div>
             ))}
           </div>
