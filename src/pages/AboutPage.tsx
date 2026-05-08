@@ -71,22 +71,22 @@ const AboutPage: React.FC = () => {
     {
       icon: <Target className="w-12 h-12" />,
       title: '求真务实',
-      description: '不说假话大话，只做真需求、真价值。数据说话，结果导向。客户没受益，就是我们没做好。'
+      description: '不说假话大话，数据说话，结果导向'
     },
     {
       icon: <Rocket className="w-12 h-12" />,
       title: '深耕笃行',
-      description: '不追风口不贪捷径，愿意花笨功夫把一件事做到极致。一米宽，一千米深。'
+      description: '一米宽，一千米深，把一件事做到极致'
     },
     {
       icon: <Users className="w-12 h-12" />,
       title: '开放共创',
-      description: '不闭门造车，和客户同行、和伙伴共赢。问题一起扛，成果一起享。'
+      description: '问题一起扛，成果一起享'
     },
     {
       icon: <Award className="w-12 h-12" />,
       title: '破荒进取',
-      description: '不安于舒适区，敢于走进无人区。破是打破常规，荒是开垦荒地——从零到一，我们先行。'
+      description: '破旧立新，开荒前行，从零到一我们先行'
     }
   ]
 
@@ -141,8 +141,7 @@ const AboutPage: React.FC = () => {
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
               >
                 <h3 className="text-2xl font-bold mb-4 text-primary-blue">{item.title}</h3>
-                <p className="text-lg font-bold text-secondary-darkGray mb-2">{item.bold}</p>
-                <p className="text-sm text-secondary-gray leading-relaxed">{item.content}</p>
+                <p className="text-secondary-gray leading-relaxed text-lg font-semibold">{item.content}</p>
               </motion.div>
             ))}
           </div>
