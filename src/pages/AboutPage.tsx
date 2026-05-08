@@ -4,7 +4,6 @@ import {
   Brain, 
   Target, 
   Rocket, 
-  Users,
   Award,
   Lightbulb,
   Heart,
@@ -70,23 +69,23 @@ const AboutPage: React.FC = () => {
   const values = [
     {
       icon: <Target className="w-12 h-12" />,
-      title: '精准',
-      description: '精准理解客户需求，精准定位市场机遇，精准提供解决方案'
+      title: '深耕一域',
+      description: '不贪多不追风，先把服装行业吃透，成为行业里最懂AI的人、AI圈里最懂服装的人'
     },
     {
       icon: <Rocket className="w-12 h-12" />,
-      title: '创新',
-      description: '持续技术创新，不断突破边界，引领行业发展方向'
+      title: '技术落地',
+      description: 'AI的价值不在论文里，在客户的订单里、工厂的产线上、商家的转化率里'
     },
     {
-      icon: <Users className="w-12 h-12" />,
-      title: '共赢',
-      description: '与客户共同成长，与合作伙伴共同发展，共创商业价值'
+      icon: <Brain className="w-12 h-12" />,
+      title: '行业Know-how',
+      description: '同一个模型，懂面料的和不懂面料的效果天差地别，行业知识深度决定AI应用高度'
     },
     {
       icon: <Award className="w-12 h-12" />,
-      title: '卓越',
-      description: '追求卓越品质，打造极致体验，成就客户成功'
+      title: '可复制的深度',
+      description: '每在一个行业扎深一步，都沉淀出可迁移的方法论和可复用的产品架构'
     }
   ]
 
@@ -122,16 +121,16 @@ const AboutPage: React.FC = () => {
               <span className="text-gradient">关于破荒AI</span>
             </h1>
             <p className="text-xl text-secondary-lightGray max-w-3xl mx-auto leading-relaxed">
-              杭州破荒人工智能科技有限公司，专注于AI技术研发与应用，致力于为企业提供智能化转型解决方案，引领人工智能产业创新发展
+              杭州破荒人工智能科技有限公司，聚焦服装行业AI赋能，从面料选择到趋势预判、从设计打版到智能营销，用AI重新定义产业链每一个环节。深耕一域、复制千行，将行业AI方法论延伸至制造、零售、检务等领域
             </p>
           </motion.div>
 
           {/* 企业使命愿景 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: '使命', content: '用AI技术赋能企业，让智能化惠及每一个组织' },
-              { title: '愿景', content: '成为最值得信赖的AI技术服务提供商' },
-              { title: '价值观', content: '破荒前行，智创未来，追求卓越，合作共赢' }
+              { title: '使命', content: '让AI深入每一根纱线，让智能织就每一个行业。从服装行业出发，用AI重新定义产业链的每一个环节，先做透一个行业，再把方法论复制到千行百业' },
+              { title: '愿景', content: '成为中国最懂行业的AI赋能平台。5年内深度赋能服装产业链上下游1000+企业，形成可复制的行业AI范式，向制造、零售、检务等领域延伸' },
+              { title: '价值观', content: '深耕一域方能破局 · 技术落地不是炫技 · 行业Know-how大于通用算法 · 做可复制的深度 · 客户成功即我们成功' }
             ].map((item, index) => (
               <motion.div
                 key={index}

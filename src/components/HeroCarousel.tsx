@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 const slides = [
   {
     id: 1,
-    title: '破荒AI · 赋能产业数字化升级',
-    description: '以先进的AI技术驱动产业变革，助力企业实现智能化转型',
+    title: '破荒AI · 深耕服装 智赋千行',
+    description: '从服装行业出发，用AI重新定义产业链每一个环节，沉淀方法论复制到千行百业',
     bgColor: 'from-primary-blue/20 to-accent-purple/10',
     pattern: 'particles',
     cta: '探索产品',
@@ -13,8 +13,8 @@ const slides = [
   },
   {
     id: 2,
-    title: '以AI技术，破局行业痛点',
-    description: '深度理解行业需求，提供精准高效的AI解决方案',
+    title: '行业Know-how驱动AI落地',
+    description: '懂面料的AI和不懂面料的AI，效果天差地别——行业知识的深度决定AI应用的高度',
     bgColor: 'from-accent-green/20 to-primary-blue/10',
     pattern: 'waves',
     cta: '了解技术',
@@ -22,8 +22,8 @@ const slides = [
   },
   {
     id: 3,
-    title: '智能驱动，精准赋能',
-    description: '五大核心产品体系，全面覆盖企业数字化转型需求',
+    title: '六大产品矩阵 · 全链路赋能',
+    description: '从趋势预判到智能生产，从爆款挖掘到知识沉淀，全面覆盖服装产业数字化需求',
     bgColor: 'from-purple-500/20 to-pink-500/10',
     pattern: 'grid',
     cta: '查看产品',
@@ -31,8 +31,8 @@ const slides = [
   },
   {
     id: 4,
-    title: '破荒前行，智创未来',
-    description: '携手共创人工智能新时代，引领科技创新浪潮',
+    title: '做可复制的深度',
+    description: '深耕服装行业，沉淀可迁移的方法论与产品架构，让下一个行业的启动成本指数级降低',
     bgColor: 'from-orange-500/20 to-yellow-500/10',
     pattern: 'circuits',
     cta: '联系我们',
