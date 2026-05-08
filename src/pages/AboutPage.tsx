@@ -129,9 +129,9 @@ const AboutPage: React.FC = () => {
           {/* 企业使命愿景 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: '使命', bold: '让AI深入每一根纱线，让智能织就每一个行业', content: '从服装行业出发，用AI重新定义产业链的每一个环节——从面料选择到趋势预判，从设计打版到智能营销。先做透一个行业，再把方法论复制到千行百业。' },
-              { title: '愿景', bold: '成为中国最懂行业的AI赋能平台', content: '5年内深度赋能服装产业链上下游1000+企业，形成可复制的行业AI范式，向制造、零售、检务等领域延伸，最终成为产业智能化的基础设施。' },
-              { title: '价值观', bold: '求真务实 · 深耕笃行 · 开放共创 · 破荒进取', content: '破旧立新，开荒前行。不是等风来，而是自己造风。' }
+              { title: '使命', content: '让AI深入每一根纱线，让智能织就每一个行业' },
+              { title: '愿景', content: '成为中国最懂行业的AI赋能平台' },
+              { title: '价值观', content: '求真务实 · 深耕笃行 · 开放共创 · 破荒进取' }
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -141,7 +141,7 @@ const AboutPage: React.FC = () => {
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
               >
                 <h3 className="text-2xl font-bold mb-4 text-primary-blue">{item.title}</h3>
-                <p className="text-secondary-gray leading-relaxed text-lg font-semibold">{item.content}</p>
+                <p className="text-secondary-darkGray leading-relaxed text-lg font-bold">{item.content}</p>
               </motion.div>
             ))}
           </div>
