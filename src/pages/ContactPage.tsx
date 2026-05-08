@@ -39,8 +39,8 @@ const ContactPage: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: '电子邮箱',
-      content: 'pohuangai@163.com',
-      details: '商务合作：pohuangai@163.com'
+      content: 'phuangai@163.com',
+      details: '商务合作：phuangai@163.com'
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -438,7 +438,7 @@ const ContactPage: React.FC = () => {
                   立即致电
                 </motion.button>
                 <motion.button
-                  onClick={() => alert('邮箱：pohuangai@163.com')}
+                  onClick={() => alert('邮箱：phuangai@163.com')}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition-all"

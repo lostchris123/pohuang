@@ -123,7 +123,7 @@ export const CORE_VALUES: ValueItem[] = [
 export const CONTACT_INFO = {
   address: '浙江省杭州市临安区科技大道浩源创新工场三号楼501',
   phone: '153-8101-1072',
-  email: 'pohuangai@163.com',
+  email: 'phuangai@163.com',
   businessHours: '周一至周五 9:00-18:00'
 };
 

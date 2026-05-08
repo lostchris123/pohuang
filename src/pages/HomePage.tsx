@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
   ]
 
     const handleFreeConsult = () => {
-    alert('联系我们\n\n📧 邮箱：pohuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')
+    alert('联系我们\n\n📧 邮箱：phuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')
   }
 
   return (

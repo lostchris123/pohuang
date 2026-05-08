@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   {link.isContact ? (
                     <button
-                      onClick={() => alert('联系我们\n\n📧 邮箱：pohuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')}
+                      onClick={() => alert('联系我们\n\n📧 邮箱：phuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')}
                       className="flex items-center text-secondary-silver hover:text-white transition-colors group"
                     >
                       <ChevronRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-blue flex-shrink-0" />
                 <button 
-                  onClick={() => alert('联系我们\n\n📧 邮箱：pohuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')}
+                  onClick={() => alert('联系我们\n\n📧 邮箱：phuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')}
                   className="text-secondary-silver hover:text-white transition-colors text-sm"
                 >
                   153-8101-1072
@@ -121,10 +121,10 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-blue flex-shrink-0" />
                 <button 
-                  onClick={() => alert('联系我们\n\n📧 邮箱：pohuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')}
+                  onClick={() => alert('联系我们\n\n📧 邮箱：phuangai@163.com\n📞 电话：153-8101-1072\n（工作日 9:00-18:00）')}
                   className="text-secondary-silver hover:text-white transition-colors text-sm"
                 >
-                  pohuangai@163.com
+                  phuangai@163.com
                 </button>
               </div>
             </div>
