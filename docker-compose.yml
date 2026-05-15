@@ -9,14 +9,8 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    volumes:
-      # 挂载SSL证书（腾讯云证书）
-      - ./ssl/cert.pem:/etc/nginx/ssl/cert.pem:ro
-      - ./ssl/key.pem:/etc/nginx/ssl/key.pem:ro
     restart: unless-stopped
-    networks:
-      - pohuang-network
 
 networks:
-  pohuang-network:
+  default:
     driver: bridge

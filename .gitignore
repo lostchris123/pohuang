@@ -17,3 +17,7 @@ yarn-error.log*
 # Editor directories
 .vscode/
 .idea/
+
+# SSL certificates
+*.pem
+*.key
