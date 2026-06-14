@@ -134,7 +134,7 @@ const ProductsPage: React.FC = () => {
       description: '打造高仿真数字人，支持直播带货、智能客服、虚拟宣讲等多场景应用，提升用户体验与品牌价值。',
       icon: <UserCircle className="w-12 h-12" />,
       color: 'from-purple-500 to-pink-500',
-      trialUrl: 'https://111.228.5.238',
+      trialUrl: 'https://ai.jiyigpt.com',
       features: [
         { title: '高仿真数字人', description: '逼真的外观与表情，沉浸式交互体验', icon: <User className="w-8 h-8 text-purple-500" /> },
         { title: '多场景适配', description: '直播、客服、宣讲等多场景无缝切换', icon: <Layout className="w-8 h-8 text-pink-500" /> },
